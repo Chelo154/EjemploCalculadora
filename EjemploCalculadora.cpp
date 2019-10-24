@@ -7,6 +7,10 @@ int suma(int a, int b){
 int resta (int a, int b){
     return a-b;
 }
+
+int multiplicacion (int a, int b){
+    return a*b;
+}
 main(){
     int a,b,resultado;
     char op;
@@ -34,9 +38,10 @@ main(){
         getchar();
 		break;
         case '*':
-        cout<<"No Implementado aun"<<endl;
+        resultado = multiplicacion(a,b);
+        cout<<"Resultado: "<< resultado <<endl;
         getchar();
-        //resultado = suma(a,b);
+        
         break;
         case '/':
         cout<<"No Implementado aun"<<endl;
